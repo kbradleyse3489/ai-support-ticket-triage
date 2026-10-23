@@ -1,0 +1,201 @@
+Actual outputs captured from the executed notebook.
+Python: 3.12.14
+Support intents: 77 | operational categories: 9
+
+Fitting: Word TF-IDF logistic regression
+Word TF-IDF logistic regression {'validation': {'accuracy': 0.8854271356783919, 'macro_f1': 0.8867118748560555, 'weighted_f1': 0.885354509960072, 'queue_accuracy': 0.9467336683417086, 'queue_macro_f1': 0.9492350713839447, 'log_loss': 0.7741089193401652, 'multiclass_brier_sum': 0.28344300059164235, 'expected_calibration_error_10_bins': 0.27267861497430723, 'mean_confidence': 0.6127485207040849}, 'fit_seconds': 3.8142750609999894}
+Fitting: Word + character calibrated SVM
+Word + character calibrated SVM {'validation': {'accuracy': 0.8959798994974875, 'macro_f1': 0.8980478055080949, 'weighted_f1': 0.895985303725361, 'queue_accuracy': 0.9472361809045227, 'queue_macro_f1': 0.9483347779649784, 'log_loss': 0.43626381164637035, 'multiclass_brier_sum': 0.15734737209574698, 'expected_calibration_error_10_bins': 0.065474393737159, 'mean_confidence': 0.8442520620620164}, 'fit_seconds': 6.3322639819998585}
+Test: Word TF-IDF logistic regression {'accuracy': 0.8766233766233766, 'macro_f1': 0.8765713857146893, 'weighted_f1': 0.8765713857146894, 'queue_accuracy': 0.9428571428571428, 'queue_macro_f1': 0.9464027681291495, 'log_loss': 0.7659443034811295, 'multiclass_brier_sum': 0.28079345165703445, 'expected_calibration_error_10_bins': 0.2643713493082381, 'mean_confidence': 0.6122520273151386}
+Test: Word + character calibrated SVM {'accuracy': 0.9032467532467533, 'macro_f1': 0.9032572374440843, 'weighted_f1': 0.9032572374440845, 'queue_accuracy': 0.9535714285714286, 'queue_macro_f1': 0.9562931444035045, 'log_loss': 0.39967910701933296, 'multiclass_brier_sum': 0.1519445538280434, 'expected_calibration_error_10_bins': 0.05829289668679981, 'mean_confidence': 0.8472132601242138}
+{
+  "created_at_utc": "2026-10-18T19:48:10.014886+00:00",
+  "dataset": "BANKING77 public banking intent benchmark",
+  "models": {
+    "Word TF-IDF logistic regression": {
+      "validation": {
+        "accuracy": 0.8854271356783919,
+        "macro_f1": 0.8867118748560555,
+        "weighted_f1": 0.885354509960072,
+        "queue_accuracy": 0.9467336683417086,
+        "queue_macro_f1": 0.9492350713839447,
+        "log_loss": 0.7741089193401652,
+        "multiclass_brier_sum": 0.28344300059164235,
+        "expected_calibration_error_10_bins": 0.27267861497430723,
+        "mean_confidence": 0.6127485207040849
+      },
+      "fit_seconds": 3.8142750609999894,
+      "test": {
+        "accuracy": 0.8766233766233766,
+        "macro_f1": 0.8765713857146893,
+        "weighted_f1": 0.8765713857146894,
+        "queue_accuracy": 0.9428571428571428,
+        "queue_macro_f1": 0.9464027681291495,
+        "log_loss": 0.7659443034811295,
+        "multiclass_brier_sum": 0.28079345165703445,
+        "expected_calibration_error_10_bins": 0.2643713493082381,
+        "mean_confidence": 0.6122520273151386
+      },
+      "batch_test_inference_seconds": 0.03184030900047219
+    },
+    "Word + character calibrated SVM": {
+      "validation": {
+        "accuracy": 0.8959798994974875,
+        "macro_f1": 0.8980478055080949,
+        "weighted_f1": 0.895985303725361,
+        "queue_accuracy": 0.9472361809045227,
+        "queue_macro_f1": 0.9483347779649784,
+        "log_loss": 0.43626381164637035,
+        "multiclass_brier_sum": 0.15734737209574698,
+        "expected_calibration_error_10_bins": 0.065474393737159,
+        "mean_confidence": 0.8442520620620164
+      },
+      "fit_seconds": 6.3322639819998585,
+      "test": {
+        "accuracy": 0.9032467532467533,
+        "macro_f1": 0.9032572374440843,
+        "weighted_f1": 0.9032572374440845,
+        "queue_accuracy": 0.9535714285714286,
+        "queue_macro_f1": 0.9562931444035045,
+        "log_loss": 0.39967910701933296,
+        "multiclass_brier_sum": 0.1519445538280434,
+        "expected_calibration_error_10_bins": 0.05829289668679981,
+        "mean_confidence": 0.8472132601242138
+      },
+      "batch_test_inference_seconds": 0.2002167560003727
+    }
+  },
+  "selected_model": "Word + character calibrated SVM",
+  "splits": {
+    "original_development_rows": 10003,
+    "original_test_rows": 3080,
+    "development_rows_removed_for_test_overlap": 25,
+    "development_conflicting_rows_removed": 2,
+    "development_duplicate_rows_removed": 30,
+    "test_normalized_duplicate_rows_retained": 4,
+    "train_rows": 7956,
+    "validation_rows": 1990,
+    "test_rows": 3080,
+    "seed": 42,
+    "normalization": "lowercase, replace non-word runs with a space, strip",
+    "official_test_unchanged": true,
+    "note": "Official test rows, order, and labels are retained; text-only duplicate hygiene removes development rows, not test rows. Similar paraphrases may remain.",
+    "test_rows_with_train_word_tfidf_cosine_ge_0_95": 40
+  },
+  "policy": {
+    "selected_model": "Word + character calibrated SVM",
+    "selection_metric": "validation intent macro-F1",
+    "threshold": 0.57,
+    "validation_error_target": 0.05,
+    "minimum_accepted_validation": 100,
+    "selection_rule": "Maximum validation coverage among 0.01-grid thresholds with empirical error <= 5% and at least 100 accepted; ties use lower threshold. If none qualifies, review all.",
+    "no_guarantee": "5% is a validation selection target, not a guaranteed test or production error bound.",
+    "extra_rules": "Margin <0.10, weak domain cues, <2 known terms, <4 words, possible multiple issues, security/dispute topics, or summary truncation trigger review independently.",
+    "validation_score_only": {
+      "threshold": 0.57,
+      "accepted": 1797.0,
+      "coverage": 0.9030150753768844,
+      "errors": 88.0,
+      "error_rate": 0.04897050639955482,
+      "error_ci_low": 0.03991890724036017,
+      "error_ci_high": 0.05994640018034802
+    },
+    "test_score_only": {
+      "threshold": 0.57,
+      "accepted": 2788.0,
+      "coverage": 0.9051948051948052,
+      "errors": 140.0,
+      "error_rate": 0.05021520803443329,
+      "error_ci_low": 0.042709465910973535,
+      "error_ci_high": 0.05895876626953413
+    },
+    "test_full_review_policy": {
+      "accepted": 2152,
+      "coverage": 0.6987012987012987,
+      "errors": 115,
+      "error_rate": 0.05343866171003717,
+      "error_wilson_95": [
+        0.04470710855458379,
+        0.06376171401568297
+      ]
+    }
+  },
+  "bootstrap": {
+    "replicates": 500,
+    "seed": 42,
+    "selected_model_macro_f1_percentile_95": [
+      0.8920521412079028,
+      0.9119824636782111
+    ],
+    "candidate_minus_baseline_macro_f1_percentile_95": [
+      0.018477299989011677,
+      0.03525013831996761
+    ],
+    "caveat": "Paired row bootstrap on this fixed benchmark; does not capture domain shift, training variability or correlated paraphrases."
+  },
+  "python": "3.12.14",
+  "sklearn": "1.8.0",
+  "seed": 42,
+  "total_run_seconds": 25.922284141000546
+}
+
+Selected model: Word + character calibrated SVM
+Validation-selected threshold: 0.57
+
+{
+  "accepted": 2152,
+  "coverage": 0.6987012987012987,
+  "errors": 115,
+  "error_rate": 0.05343866171003717,
+  "error_wilson_95": [
+    0.04470710855458379,
+    0.06376171401568297
+  ]
+}
+
+{
+  "summary": {
+    "issue_focused": {
+      "fixtures": 36,
+      "matched_key_phrases": 82,
+      "total_key_phrases": 99,
+      "micro_key_phrase_recall": 0.8282828282828283,
+      "complete_key_phrase_retention": 0.5277777777777778,
+      "fully_extractive_summary_rate": 1.0,
+      "mean_summary_to_input_word_ratio": 0.5757774526905552
+    },
+    "lead_two": {
+      "fixtures": 36,
+      "matched_key_phrases": 51,
+      "total_key_phrases": 99,
+      "micro_key_phrase_recall": 0.5151515151515151,
+      "complete_key_phrase_retention": 0.19444444444444445,
+      "fully_extractive_summary_rate": 1.0,
+      "mean_summary_to_input_word_ratio": 0.5173445351978833
+    }
+  },
+  "review_challenges": {
+    "ambiguous_multiple_issues": {
+      "examples": 8,
+      "flagged_for_review": 5,
+      "matches_authored_expectation": 5
+    },
+    "in_domain_straightforward": {
+      "examples": 8,
+      "flagged_for_review": 1,
+      "matches_authored_expectation": 7
+    },
+    "off_domain": {
+      "examples": 8,
+      "flagged_for_review": 7,
+      "matches_authored_expectation": 7
+    }
+  },
+  "notes": [
+    "All fixtures are project-authored synthetic diagnostics, not real customer tickets.",
+    "Expected phrases and review flags were frozen independently before inference, not supplied by human raters.",
+    "Lexical retention is not semantic correctness, actionability, or professional summary quality.",
+    "Copying a sentence prevents newly generated words, but can still omit critical context or preserve a false user statement.",
+    "Challenge results are observations only; no model, threshold, extractor, or review rules were retuned after viewing fixture scores."
+  ]
+}
