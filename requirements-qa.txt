@@ -1,0 +1,4 @@
+# Optional real-browser screenshot capture only. Not needed for app/tests/notebook.
+-r requirements-dev.txt
+playwright==1.62.0
+requests==2.34.2

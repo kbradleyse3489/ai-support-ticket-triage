@@ -1,0 +1,389 @@
+[
+  {
+    "id": "summary_001",
+    "text": "Hello, I hope your morning is going well. My physical card has not arrived, although the delivery estimate ended yesterday. The address shown in the app is correct. Please check the delivery status rather than ordering another card.",
+    "expected_key_phrases": [
+      "physical card has not arrived",
+      "delivery estimate ended yesterday",
+      "rather than ordering another card"
+    ],
+    "rationale": "The delivery problem follows a greeting; the final sentence rules out a replacement request.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_002",
+    "text": "My card was charged twice for one grocery purchase. Both entries are completed, not pending. I only bought groceries once. The shop was busy and I was carrying a blue shopping bag.",
+    "expected_key_phrases": [
+      "charged twice",
+      "one grocery purchase",
+      "completed, not pending"
+    ],
+    "rationale": "The issue is first; the last sentence is a concrete but irrelevant distractor, and status negation matters.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_003",
+    "text": "Thanks for making the transaction screen easier to read. I checked it after lunch and again this evening. A bank transfer into my account is marked completed, but the balance has not increased. This is not a card top-up.",
+    "expected_key_phrases": [
+      "bank transfer into my account",
+      "balance has not increased",
+      "not a card top-up"
+    ],
+    "rationale": "Pleasantries and timing precede the core issue; the final distinction prevents confusing transfer and card top-up problems.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_004",
+    "text": "The ATM kept my card after the cash withdrawal finished. I did receive the cash, so I am not reporting missing money. The machine is in a fictional shopping centre. What should I do about the retained card?",
+    "expected_key_phrases": [
+      "ATM kept my card",
+      "did receive the cash"
+    ],
+    "rationale": "A retained card is the issue, while a negated cash discrepancy and location distractor should not dominate.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_005",
+    "text": "Hi there. I forgot the passcode for the app and cannot sign in. My card PIN still works at shops. Please help me recover access to the app.",
+    "expected_key_phrases": [
+      "forgot the passcode",
+      "cannot sign in",
+      "card PIN still works"
+    ],
+    "rationale": "The summary must distinguish an app passcode problem from a working card PIN.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_006",
+    "text": "I am planning a short trip and sorting out a few things today. The suitcase is already packed. Contactless payments fail on my card, but inserting the card and using the PIN works. This happened at three different shops. I need help restoring contactless payments.",
+    "expected_key_phrases": [
+      "Contactless payments fail",
+      "inserting the card and using the PIN works",
+      "three different shops"
+    ],
+    "rationale": "Two travel distractors precede a payment-mode-specific failure with a useful cross-merchant detail.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_007",
+    "text": "Please cancel the transfer I submitted this morning. It is still pending and the recipient details are wrong. I have not sent a second transfer. Thank you for checking before any money leaves.",
+    "expected_key_phrases": [
+      "cancel the transfer",
+      "still pending",
+      "recipient details are wrong"
+    ],
+    "rationale": "The requested action, status, and cause are essential; the denied second transfer is background.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_008",
+    "text": "I had a nice lunch with a friend yesterday. Afterwards I noticed an unfamiliar cash withdrawal in the app. I still have my card and did not withdraw any cash. The entry is completed, so please help me report it.",
+    "expected_key_phrases": [
+      "unfamiliar cash withdrawal",
+      "still have my card",
+      "did not withdraw any cash"
+    ],
+    "rationale": "A social distractor precedes an unrecognised withdrawal; possession and denial are important context.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_009",
+    "text": "The merchant says it issued my refund last week. The refund is not showing in my account. I am not asking to start a new refund request. I have already checked the recent transactions list.",
+    "expected_key_phrases": [
+      "issued my refund last week",
+      "refund is not showing",
+      "not asking to start a new refund request"
+    ],
+    "rationale": "The fixture separates a missing existing refund from requesting a new one.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_010",
+    "text": "Good evening, and thanks for your help. I can see my virtual card in the app. An online payment using the virtual card was declined, while my physical card worked with the same merchant. I have not deleted the virtual card.",
+    "expected_key_phrases": [
+      "virtual card was declined",
+      "physical card worked with the same merchant"
+    ],
+    "rationale": "The failure appears after an introduction; a successful comparison payment narrows the issue.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_011",
+    "text": "I want to change my card PIN, not reset my app passcode. I still know the current PIN. Nothing has been blocked. Could you tell me where to make the change?",
+    "expected_key_phrases": [
+      "change my card PIN",
+      "not reset my app passcode",
+      "still know the current PIN"
+    ],
+    "rationale": "The summary should retain the requested PIN change without turning explicit non-problems into issues.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_012",
+    "text": "My new card arrived today and the envelope looked fine. I have not tried making a purchase yet. How do I activate the physical card? I am not trying to link a card from another bank.",
+    "expected_key_phrases": [
+      "activate the physical card",
+      "not trying to link a card from another bank"
+    ],
+    "rationale": "The actual question appears late and includes a distinction from card linking.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_013",
+    "text": "I withdrew cash while travelling yesterday. The exchange rate for the cash withdrawal looks wrong compared with the rate displayed before I confirmed it. I am not asking about a separate ATM fee. The rest of the trip has been pleasant.",
+    "expected_key_phrases": [
+      "exchange rate for the cash withdrawal looks wrong",
+      "rate displayed before I confirmed it",
+      "not asking about a separate ATM fee"
+    ],
+    "rationale": "The issue is an ATM exchange-rate discrepancy, not a fee; the travel sentiment is irrelevant.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_014",
+    "text": "Hello, I have two problems to report. My card is missing and I also see a card payment I do not recognise. I last used the card yesterday. Please help me secure the card and investigate the unfamiliar payment.",
+    "expected_key_phrases": [
+      "card is missing",
+      "card payment I do not recognise",
+      "secure the card"
+    ],
+    "rationale": "The summary needs both distinct issues and the protective action, not just the first problem.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_015",
+    "text": "The coffee machine in our office has finally been fixed. That is unrelated, but it reminded me to check my account. A card top-up is still pending after two days. My bank has already debited the money. I have not attempted another top-up.",
+    "expected_key_phrases": [
+      "card top-up is still pending",
+      "after two days",
+      "bank has already debited the money"
+    ],
+    "rationale": "Two distractor sentences delay the issue; elapsed time and debited funds are essential details.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_016",
+    "text": "I received less cash than I requested from the ATM. The account was debited for the full requested amount. The withdrawal was not declined. Please help me correct the difference.",
+    "expected_key_phrases": [
+      "less cash than I requested",
+      "debited for the full requested amount"
+    ],
+    "rationale": "The important contrast is partial cash received versus the full debit, not the negated decline.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_017",
+    "text": "Thanks for your earlier reply. It still has not arrived. I mean the bank transfer to my friend, not the replacement card. My app says completed, but the recipient has not received the money.",
+    "expected_key_phrases": [
+      "bank transfer to my friend",
+      "app says completed",
+      "recipient has not received the money"
+    ],
+    "rationale": "A vague follow-up becomes interpretable only after the later clarification; the card mention is explicitly excluded.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_018",
+    "text": "Can I add money using cash or a cheque? I do not want to use a debit card or a bank transfer for this deposit. I am only asking which deposit methods are supported. No deposit has been made yet.",
+    "expected_key_phrases": [
+      "add money using cash or a cheque",
+      "No deposit has been made yet"
+    ],
+    "rationale": "This is a methods question, not a missing-deposit complaint, despite references to several funding routes.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_019",
+    "text": "I switched to a new phone last weekend. My old phone was stolen, and I need to stop it from accessing my banking app. My physical card is safe. Please help me secure access from the stolen phone.",
+    "expected_key_phrases": [
+      "old phone was stolen",
+      "stop it from accessing my banking app",
+      "physical card is safe"
+    ],
+    "rationale": "Phone theft and access protection must remain distinct from a lost physical card.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_020",
+    "text": "I would like to close my account. There is no complaint about my card and I do not need a replacement. I have moved my everyday banking elsewhere. Please explain the account closure steps.",
+    "expected_key_phrases": [
+      "close my account",
+      "account closure steps"
+    ],
+    "rationale": "The requested account termination is explicit; negated card issues are deliberate distractors.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_021",
+    "text": "Hello from a very rainy town. My card payment is pending even though the shop cancelled the order. The shop says it did not complete the payment. I need to know when the pending amount will be released.",
+    "expected_key_phrases": [
+      "card payment is pending",
+      "shop cancelled the order",
+      "pending amount will be released"
+    ],
+    "rationale": "A weather greeting precedes a pending-payment release question with merchant cancellation context.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_022",
+    "text": "The identity check keeps rejecting the photo I submit. I followed the lighting instructions and tried again today. I am not asking why verification is required. How can I complete the verification successfully?",
+    "expected_key_phrases": [
+      "identity check keeps rejecting the photo",
+      "not asking why verification is required",
+      "complete the verification successfully"
+    ],
+    "rationale": "The fixture distinguishes failure to complete verification from a question about its necessity, without identity data.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_023",
+    "text": "I am updating my contact information after moving. The app still shows my old address and I want to change it. My name has not changed. Could you point me to the correct settings?",
+    "expected_key_phrases": [
+      "old address",
+      "want to change it",
+      "name has not changed"
+    ],
+    "rationale": "The affected personal-detail field and the negated name change should not be confused; no address is supplied.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_024",
+    "text": "Please help with two separate charges. A transfer fee appeared when I sent money, and a cash withdrawal fee appeared after using an ATM. I expected neither fee. The transfer itself arrived and the ATM dispensed the right amount.",
+    "expected_key_phrases": [
+      "transfer fee appeared",
+      "cash withdrawal fee appeared",
+      "expected neither fee"
+    ],
+    "rationale": "Both fee issues matter; successful transfer and cash delivery rule out unrelated failure categories.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_025",
+    "text": "I have been using the app to plan my weekend spending. The colours on the chart are easy to read. I cannot exchange my euro balance into dollars in the app because the exchange button is unavailable. This is not a card payment. Can you help me make the exchange?",
+    "expected_key_phrases": [
+      "exchange my euro balance into dollars",
+      "exchange button is unavailable",
+      "not a card payment"
+    ],
+    "rationale": "Two app-usage distractors precede a blocked in-app exchange, explicitly distinguished from card conversion.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_026",
+    "text": "My card will expire next month. I want to know whether a replacement will be sent automatically. The current card still works, and I have not lost it.",
+    "expected_key_phrases": [
+      "card will expire next month",
+      "replacement will be sent automatically",
+      "current card still works"
+    ],
+    "rationale": "A short three-sentence case tests upcoming expiry rather than non-arrival or a broken card.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_027",
+    "text": "Good afternoon. I tried adding my card to a mobile wallet, but the setup failed. The physical card works normally in shops. I need help adding it to Apple Pay, not ordering a new card.",
+    "expected_key_phrases": [
+      "adding my card to a mobile wallet",
+      "setup failed",
+      "adding it to Apple Pay"
+    ],
+    "rationale": "The wallet enrolment failure is distinct from physical-card failure and replacement requests.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_028",
+    "text": "My card top-up failed and the app displayed an error. There is no completed top-up in the activity list. My bank shows a temporary hold, however. I would like to understand the failed top-up and the hold.",
+    "expected_key_phrases": [
+      "card top-up failed",
+      "bank shows a temporary hold"
+    ],
+    "rationale": "Both the app failure and the bank hold matter; absence of a completed entry is supporting context.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_029",
+    "text": "Thank you for looking into this before. The same thing happened again today. By that I mean my cash withdrawal was declined at the ATM, not that my card was kept. No cash came out and I still have the card.",
+    "expected_key_phrases": [
+      "cash withdrawal was declined",
+      "No cash came out",
+      "still have the card"
+    ],
+    "rationale": "The vague opening must be resolved by later text; retention of the card excludes an ATM-capture issue.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_030",
+    "text": "I want an additional physical card to keep as a spare. My existing card works and is not expiring soon. I do not want to replace or cancel it. Is a spare card available?",
+    "expected_key_phrases": [
+      "additional physical card to keep as a spare",
+      "do not want to replace or cancel it"
+    ],
+    "rationale": "The requested extra card must not be confused with replacement, cancellation, or expiry handling.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_031",
+    "text": "The meeting I was going to join has been postponed. While waiting, I checked my direct debits. There is a direct debit payment I do not recognise, and I have never authorised that company to collect money. My regular rent payment looks correct. Please help me dispute the unfamiliar direct debit.",
+    "expected_key_phrases": [
+      "direct debit payment I do not recognise",
+      "never authorised that company",
+      "dispute the unfamiliar direct debit"
+    ],
+    "rationale": "Two opening distractions and a legitimate payment surround an unrecognised direct-debit complaint.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_032",
+    "text": "I used the wrong PIN too many times and now my card PIN is blocked. I have remembered the correct PIN since then. The app itself still opens normally. How do I unblock the card PIN?",
+    "expected_key_phrases": [
+      "card PIN is blocked",
+      "remembered the correct PIN",
+      "unblock the card PIN"
+    ],
+    "rationale": "The fixture separates a blocked card PIN from a forgotten passcode and includes the requested remedy.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_033",
+    "text": "Hello, I have a question before setting anything up. Can I enable automatic top-ups when my balance gets low? I do not want a one-time top-up right now. Please explain the automatic top-up options.",
+    "expected_key_phrases": [
+      "enable automatic top-ups",
+      "when my balance gets low",
+      "do not want a one-time top-up"
+    ],
+    "rationale": "The requested automation and balance trigger appear after a greeting; a one-off payment is explicitly excluded.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_034",
+    "text": "My outgoing transfer failed, and the money has returned to my balance. I would like to understand why it failed before trying again. The recipient details look correct to me. This is not a request to cancel a pending transfer.",
+    "expected_key_phrases": [
+      "outgoing transfer failed",
+      "money has returned to my balance",
+      "why it failed before trying again"
+    ],
+    "rationale": "Failure diagnosis and returned funds are key; cancellation of a pending transfer is a negated distractor.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_035",
+    "text": "I have two unrelated questions for the support team. Can I hold Japanese yen in my account, and can I get a disposable virtual card? I have not tried making a payment yet. Please address both questions rather than choosing only one.",
+    "expected_key_phrases": [
+      "hold Japanese yen in my account",
+      "get a disposable virtual card"
+    ],
+    "rationale": "The summary should preserve two feature questions instead of dropping one or inventing a payment failure.",
+    "synthetic": true
+  },
+  {
+    "id": "summary_036",
+    "text": "Thanks, but that did not resolve it. The missing item is the cash deposit in my balance, not an incoming bank transfer. I deposited cash yesterday and the balance has not updated. The receipt says the deposit was accepted. Please check the cash deposit.",
+    "expected_key_phrases": [
+      "cash deposit",
+      "balance has not updated",
+      "receipt says the deposit was accepted"
+    ],
+    "rationale": "A vague follow-up is clarified by a cash-versus-transfer distinction; deposit acceptance is important evidence.",
+    "synthetic": true
+  }
+]

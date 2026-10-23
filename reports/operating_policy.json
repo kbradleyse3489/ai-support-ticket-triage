@@ -1,0 +1,38 @@
+{
+  "selected_model": "Word + character calibrated SVM",
+  "selection_metric": "validation intent macro-F1",
+  "threshold": 0.57,
+  "validation_error_target": 0.05,
+  "minimum_accepted_validation": 100,
+  "selection_rule": "Maximum validation coverage among 0.01-grid thresholds with empirical error <= 5% and at least 100 accepted; ties use lower threshold. If none qualifies, review all.",
+  "no_guarantee": "5% is a validation selection target, not a guaranteed test or production error bound.",
+  "extra_rules": "Margin <0.10, weak domain cues, <2 known terms, <4 words, possible multiple issues, security/dispute topics, or summary truncation trigger review independently.",
+  "validation_score_only": {
+    "threshold": 0.57,
+    "accepted": 1797.0,
+    "coverage": 0.9030150753768844,
+    "errors": 88.0,
+    "error_rate": 0.04897050639955482,
+    "error_ci_low": 0.03991890724036017,
+    "error_ci_high": 0.05994640018034802
+  },
+  "test_score_only": {
+    "threshold": 0.57,
+    "accepted": 2788.0,
+    "coverage": 0.9051948051948052,
+    "errors": 140.0,
+    "error_rate": 0.05021520803443329,
+    "error_ci_low": 0.042709465910973535,
+    "error_ci_high": 0.05895876626953413
+  },
+  "test_full_review_policy": {
+    "accepted": 2152,
+    "coverage": 0.6987012987012987,
+    "errors": 115,
+    "error_rate": 0.05343866171003717,
+    "error_wilson_95": [
+      0.04470710855458379,
+      0.06376171401568297
+    ]
+  }
+}

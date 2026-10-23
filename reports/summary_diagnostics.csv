@@ -1,0 +1,73 @@
+id,method,summary,matched_key_phrases,total_key_phrases,key_phrase_recall,all_key_phrases_retained,exact_sentence_copy,word_ratio,missing_phrases
+summary_001,lead_two,"Hello, I hope your morning is going well. My physical card has not arrived, although the delivery estimate ended yesterday.",2,3,0.6666666666666666,False,True,0.5263157894736842,rather than ordering another card
+summary_001,issue_focused,"My physical card has not arrived, although the delivery estimate ended yesterday. Please check the delivery status rather than ordering another card.",3,3,1.0,True,True,0.5789473684210527,
+summary_002,lead_two,"My card was charged twice for one grocery purchase. Both entries are completed, not pending.",3,3,1.0,True,True,0.46875,
+summary_002,issue_focused,"My card was charged twice for one grocery purchase. Both entries are completed, not pending.",3,3,1.0,True,True,0.46875,
+summary_003,lead_two,Thanks for making the transaction screen easier to read. I checked it after lunch and again this evening.,0,3,0.0,False,True,0.46153846153846156,bank transfer into my account; balance has not increased; not a card top-up
+summary_003,issue_focused,"A bank transfer into my account is marked completed, but the balance has not increased. This is not a card top-up.",3,3,1.0,True,True,0.5384615384615384,
+summary_004,lead_two,"The ATM kept my card after the cash withdrawal finished. I did receive the cash, so I am not reporting missing money.",2,2,1.0,True,True,0.5789473684210527,
+summary_004,issue_focused,"The ATM kept my card after the cash withdrawal finished. I did receive the cash, so I am not reporting missing money.",2,2,1.0,True,True,0.5789473684210527,
+summary_005,lead_two,Hi there. I forgot the passcode for the app and cannot sign in.,2,3,0.6666666666666666,False,True,0.4642857142857143,card PIN still works
+summary_005,issue_focused,I forgot the passcode for the app and cannot sign in. My card PIN still works at shops.,3,3,1.0,True,True,0.6428571428571429,
+summary_006,lead_two,I am planning a short trip and sorting out a few things today. The suitcase is already packed.,0,3,0.0,False,True,0.4,Contactless payments fail; inserting the card and using the PIN works; three different shops
+summary_006,issue_focused,"Contactless payments fail on my card, but inserting the card and using the PIN works. I need help restoring contactless payments.",2,3,0.6666666666666666,False,True,0.4666666666666667,three different shops
+summary_007,lead_two,Please cancel the transfer I submitted this morning. It is still pending and the recipient details are wrong.,3,3,1.0,True,True,0.5454545454545454,
+summary_007,issue_focused,It is still pending and the recipient details are wrong. I have not sent a second transfer.,2,3,0.6666666666666666,False,True,0.5151515151515151,cancel the transfer
+summary_008,lead_two,I had a nice lunch with a friend yesterday. Afterwards I noticed an unfamiliar cash withdrawal in the app.,1,3,0.3333333333333333,False,True,0.475,still have my card; did not withdraw any cash
+summary_008,issue_focused,Afterwards I noticed an unfamiliar cash withdrawal in the app. I still have my card and did not withdraw any cash.,3,3,1.0,True,True,0.525,
+summary_009,lead_two,The merchant says it issued my refund last week. The refund is not showing in my account.,2,3,0.6666666666666666,False,True,0.4857142857142857,not asking to start a new refund request
+summary_009,issue_focused,The refund is not showing in my account. I am not asking to start a new refund request.,2,3,0.6666666666666666,False,True,0.5142857142857142,issued my refund last week
+summary_010,lead_two,"Good evening, and thanks for your help. I can see my virtual card in the app.",0,2,0.0,False,True,0.3902439024390244,virtual card was declined; physical card worked with the same merchant
+summary_010,issue_focused,"An online payment using the virtual card was declined, while my physical card worked with the same merchant. I have not deleted the virtual card.",2,2,1.0,True,True,0.6097560975609756,
+summary_011,lead_two,"I want to change my card PIN, not reset my app passcode. I still know the current PIN.",3,3,1.0,True,True,0.5806451612903226,
+summary_011,issue_focused,"I want to change my card PIN, not reset my app passcode. Could you tell me where to make the change?",2,3,0.6666666666666666,False,True,0.6774193548387096,still know the current PIN
+summary_012,lead_two,My new card arrived today and the envelope looked fine. I have not tried making a purchase yet.,0,2,0.0,False,True,0.5,activate the physical card; not trying to link a card from another bank
+summary_012,issue_focused,How do I activate the physical card? I am not trying to link a card from another bank.,2,2,1.0,True,True,0.5,
+summary_013,lead_two,I withdrew cash while travelling yesterday. The exchange rate for the cash withdrawal looks wrong compared with the rate displayed before I confirmed it.,2,3,0.6666666666666666,False,True,0.5853658536585366,not asking about a separate ATM fee
+summary_013,issue_focused,The exchange rate for the cash withdrawal looks wrong compared with the rate displayed before I confirmed it. I am not asking about a separate ATM fee.,3,3,1.0,True,True,0.6585365853658537,
+summary_014,lead_two,"Hello, I have two problems to report. My card is missing and I also see a card payment I do not recognise.",2,3,0.6666666666666666,False,True,0.5641025641025641,secure the card
+summary_014,issue_focused,My card is missing and I also see a card payment I do not recognise. Please help me secure the card and investigate the unfamiliar payment.,3,3,1.0,True,True,0.6666666666666666,
+summary_015,lead_two,"The coffee machine in our office has finally been fixed. That is unrelated, but it reminded me to check my account.",0,3,0.0,False,True,0.4883720930232558,card top-up is still pending; after two days; bank has already debited the money
+summary_015,issue_focused,A card top-up is still pending after two days. I have not attempted another top-up.,2,3,0.6666666666666666,False,True,0.3488372093023256,bank has already debited the money
+summary_016,lead_two,I received less cash than I requested from the ATM. The account was debited for the full requested amount.,2,2,1.0,True,True,0.6333333333333333,
+summary_016,issue_focused,I received less cash than I requested from the ATM. The withdrawal was not declined.,1,2,0.5,False,True,0.5,debited for the full requested amount
+summary_017,lead_two,Thanks for your earlier reply. It still has not arrived.,0,3,0.0,False,True,0.29411764705882354,bank transfer to my friend; app says completed; recipient has not received the money
+summary_017,issue_focused,"I mean the bank transfer to my friend, not the replacement card. My app says completed, but the recipient has not received the money.",3,3,1.0,True,True,0.7058823529411765,
+summary_018,lead_two,Can I add money using cash or a cheque? I do not want to use a debit card or a bank transfer for this deposit.,1,2,0.5,False,True,0.625,No deposit has been made yet
+summary_018,issue_focused,Can I add money using cash or a cheque? I do not want to use a debit card or a bank transfer for this deposit.,1,2,0.5,False,True,0.625,No deposit has been made yet
+summary_019,lead_two,"I switched to a new phone last weekend. My old phone was stolen, and I need to stop it from accessing my banking app.",2,3,0.6666666666666666,False,True,0.631578947368421,physical card is safe
+summary_019,issue_focused,"My old phone was stolen, and I need to stop it from accessing my banking app. Please help me secure access from the stolen phone.",2,3,0.6666666666666666,False,True,0.6578947368421053,physical card is safe
+summary_020,lead_two,I would like to close my account. There is no complaint about my card and I do not need a replacement.,1,2,0.5,False,True,0.6176470588235294,account closure steps
+summary_020,issue_focused,I would like to close my account. There is no complaint about my card and I do not need a replacement.,1,2,0.5,False,True,0.6176470588235294,account closure steps
+summary_021,lead_two,Hello from a very rainy town. My card payment is pending even though the shop cancelled the order.,2,3,0.6666666666666666,False,True,0.47368421052631576,pending amount will be released
+summary_021,issue_focused,My card payment is pending even though the shop cancelled the order. I need to know when the pending amount will be released.,3,3,1.0,True,True,0.6052631578947368,
+summary_022,lead_two,The identity check keeps rejecting the photo I submit. I followed the lighting instructions and tried again today.,1,3,0.3333333333333333,False,True,0.5454545454545454,not asking why verification is required; complete the verification successfully
+summary_022,issue_focused,I am not asking why verification is required. How can I complete the verification successfully?,2,3,0.6666666666666666,False,True,0.45454545454545453,identity check keeps rejecting the photo
+summary_023,lead_two,I am updating my contact information after moving. The app still shows my old address and I want to change it.,2,3,0.6666666666666666,False,True,0.6176470588235294,name has not changed
+summary_023,issue_focused,The app still shows my old address and I want to change it. My name has not changed.,3,3,1.0,True,True,0.5294117647058824,
+summary_024,lead_two,"Please help with two separate charges. A transfer fee appeared when I sent money, and a cash withdrawal fee appeared after using an ATM.",2,3,0.6666666666666666,False,True,0.6153846153846154,expected neither fee
+summary_024,issue_focused,"A transfer fee appeared when I sent money, and a cash withdrawal fee appeared after using an ATM. The transfer itself arrived and the ATM dispensed the right amount.",2,3,0.6666666666666666,False,True,0.7435897435897436,expected neither fee
+summary_025,lead_two,I have been using the app to plan my weekend spending. The colours on the chart are easy to read.,0,3,0.0,False,True,0.4,exchange my euro balance into dollars; exchange button is unavailable; not a card payment
+summary_025,issue_focused,I cannot exchange my euro balance into dollars in the app because the exchange button is unavailable. This is not a card payment.,3,3,1.0,True,True,0.46,
+summary_026,lead_two,My card will expire next month. I want to know whether a replacement will be sent automatically.,2,3,0.6666666666666666,False,True,0.6071428571428571,current card still works
+summary_026,issue_focused,"My card will expire next month. The current card still works, and I have not lost it.",2,3,0.6666666666666666,False,True,0.6071428571428571,replacement will be sent automatically
+summary_027,lead_two,"Good afternoon. I tried adding my card to a mobile wallet, but the setup failed.",2,3,0.6666666666666666,False,True,0.42857142857142855,adding it to Apple Pay
+summary_027,issue_focused,"I tried adding my card to a mobile wallet, but the setup failed. I need help adding it to Apple Pay, not ordering a new card.",3,3,1.0,True,True,0.7428571428571429,
+summary_028,lead_two,My card top-up failed and the app displayed an error. There is no completed top-up in the activity list.,1,2,0.5,False,True,0.5135135135135135,bank shows a temporary hold
+summary_028,issue_focused,My card top-up failed and the app displayed an error. I would like to understand the failed top-up and the hold.,1,2,0.5,False,True,0.5675675675675675,bank shows a temporary hold
+summary_029,lead_two,Thank you for looking into this before. The same thing happened again today.,0,3,0.0,False,True,0.3170731707317073,cash withdrawal was declined; No cash came out; still have the card
+summary_029,issue_focused,"By that I mean my cash withdrawal was declined at the ATM, not that my card was kept. No cash came out and I still have the card.",3,3,1.0,True,True,0.6829268292682927,
+summary_030,lead_two,I want an additional physical card to keep as a spare. My existing card works and is not expiring soon.,1,2,0.5,False,True,0.5882352941176471,do not want to replace or cancel it
+summary_030,issue_focused,My existing card works and is not expiring soon. I do not want to replace or cancel it.,1,2,0.5,False,True,0.5294117647058824,additional physical card to keep as a spare
+summary_031,lead_two,"The meeting I was going to join has been postponed. While waiting, I checked my direct debits.",0,3,0.0,False,True,0.3333333333333333,direct debit payment I do not recognise; never authorised that company; dispute the unfamiliar direct debit
+summary_031,issue_focused,"There is a direct debit payment I do not recognise, and I have never authorised that company to collect money. Please help me dispute the unfamiliar direct debit.",3,3,1.0,True,True,0.5490196078431373,
+summary_032,lead_two,I used the wrong PIN too many times and now my card PIN is blocked. I have remembered the correct PIN since then.,2,3,0.6666666666666666,False,True,0.6388888888888888,unblock the card PIN
+summary_032,issue_focused,I used the wrong PIN too many times and now my card PIN is blocked. How do I unblock the card PIN?,2,3,0.6666666666666666,False,True,0.6111111111111112,remembered the correct PIN
+summary_033,lead_two,"Hello, I have a question before setting anything up. Can I enable automatic top-ups when my balance gets low?",2,3,0.6666666666666666,False,True,0.5588235294117647,do not want a one-time top-up
+summary_033,issue_focused,Can I enable automatic top-ups when my balance gets low? I do not want a one-time top-up right now.,3,3,1.0,True,True,0.5588235294117647,
+summary_034,lead_two,"My outgoing transfer failed, and the money has returned to my balance. I would like to understand why it failed before trying again.",3,3,1.0,True,True,0.575,
+summary_034,issue_focused,"My outgoing transfer failed, and the money has returned to my balance. This is not a request to cancel a pending transfer.",2,3,0.6666666666666666,False,True,0.55,why it failed before trying again
+summary_035,lead_two,"I have two unrelated questions for the support team. Can I hold Japanese yen in my account, and can I get a disposable virtual card?",2,2,1.0,True,True,0.5952380952380952,
+summary_035,issue_focused,"Can I hold Japanese yen in my account, and can I get a disposable virtual card? I have not tried making a payment yet.",2,2,1.0,True,True,0.5714285714285714,
+summary_036,lead_two,"Thanks, but that did not resolve it. The missing item is the cash deposit in my balance, not an incoming bank transfer.",1,3,0.3333333333333333,False,True,0.5,balance has not updated; receipt says the deposit was accepted
+summary_036,issue_focused,"The missing item is the cash deposit in my balance, not an incoming bank transfer. I deposited cash yesterday and the balance has not updated.",2,3,0.6666666666666666,False,True,0.5681818181818182,receipt says the deposit was accepted

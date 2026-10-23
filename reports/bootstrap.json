@@ -1,0 +1,13 @@
+{
+  "replicates": 500,
+  "seed": 42,
+  "selected_model_macro_f1_percentile_95": [
+    0.8920521412079028,
+    0.9119824636782111
+  ],
+  "candidate_minus_baseline_macro_f1_percentile_95": [
+    0.018477299989011677,
+    0.03525013831996761
+  ],
+  "caveat": "Paired row bootstrap on this fixed benchmark; does not capture domain shift, training variability or correlated paraphrases."
+}

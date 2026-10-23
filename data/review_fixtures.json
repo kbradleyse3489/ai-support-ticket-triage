@@ -1,0 +1,218 @@
+[
+  {
+    "id": "review_001",
+    "text": "My physical card has not arrived and the estimated delivery date has passed. Can you check where it is?",
+    "kind": "in_domain_straightforward",
+    "expected_review": false,
+    "expected_reason": "clear_single_banking_intent",
+    "rationale": "A direct card-arrival problem with no competing issue.",
+    "synthetic": true
+  },
+  {
+    "id": "review_002",
+    "text": "I lost my bank card yesterday. Please help me block the missing card.",
+    "kind": "in_domain_straightforward",
+    "expected_review": false,
+    "expected_reason": "clear_single_banking_intent",
+    "rationale": "A clear lost-card request with a protective action.",
+    "synthetic": true
+  },
+  {
+    "id": "review_003",
+    "text": "The ATM kept my bank card and would not return it. How can I deal with the swallowed card?",
+    "kind": "in_domain_straightforward",
+    "expected_review": false,
+    "expected_reason": "clear_single_banking_intent",
+    "rationale": "A clear card-swallowed case, without a cash discrepancy.",
+    "synthetic": true
+  },
+  {
+    "id": "review_004",
+    "text": "I forgot the passcode for the banking app and cannot log in. How do I reset that passcode?",
+    "kind": "in_domain_straightforward",
+    "expected_review": false,
+    "expected_reason": "clear_single_banking_intent",
+    "rationale": "A clear forgotten app-passcode request rather than a card PIN issue.",
+    "synthetic": true
+  },
+  {
+    "id": "review_005",
+    "text": "The same card purchase was charged twice. Both charges are completed and I only made one purchase.",
+    "kind": "in_domain_straightforward",
+    "expected_review": false,
+    "expected_reason": "clear_single_banking_intent",
+    "rationale": "An explicit duplicate transaction.",
+    "synthetic": true
+  },
+  {
+    "id": "review_006",
+    "text": "My bank card expires next month. Will you send a replacement before it expires?",
+    "kind": "in_domain_straightforward",
+    "expected_review": false,
+    "expected_reason": "clear_single_banking_intent",
+    "rationale": "The central issue is imminent card expiry.",
+    "synthetic": true
+  },
+  {
+    "id": "review_007",
+    "text": "I want to change the PIN on my bank card. I know the current PIN and the card is not blocked.",
+    "kind": "in_domain_straightforward",
+    "expected_review": false,
+    "expected_reason": "clear_single_banking_intent",
+    "rationale": "An unambiguous change-PIN request with common competing cases excluded.",
+    "synthetic": true
+  },
+  {
+    "id": "review_008",
+    "text": "I would like to close my bank account permanently. Please explain how to terminate the account.",
+    "kind": "in_domain_straightforward",
+    "expected_review": false,
+    "expected_reason": "clear_single_banking_intent",
+    "rationale": "An explicit account-termination request.",
+    "synthetic": true
+  },
+  {
+    "id": "review_009",
+    "text": "How do I bake a loaf of sourdough bread with a crisp crust?",
+    "kind": "off_domain",
+    "expected_review": true,
+    "expected_reason": "outside_banking_support",
+    "rationale": "A cooking question with no banking-support intent.",
+    "synthetic": true
+  },
+  {
+    "id": "review_010",
+    "text": "Please write a short poem about a lighthouse in winter.",
+    "kind": "off_domain",
+    "expected_review": true,
+    "expected_reason": "outside_banking_support",
+    "rationale": "A creative-writing request, not a banking issue.",
+    "synthetic": true
+  },
+  {
+    "id": "review_011",
+    "text": "What is the best way to prune a rose bush in spring?",
+    "kind": "off_domain",
+    "expected_review": true,
+    "expected_reason": "outside_banking_support",
+    "rationale": "A gardening question unrelated to account or card support.",
+    "synthetic": true
+  },
+  {
+    "id": "review_012",
+    "text": "My washing machine stops during the spin cycle. How can I fix it?",
+    "kind": "off_domain",
+    "expected_review": true,
+    "expected_reason": "outside_banking_support",
+    "rationale": "An appliance-repair request outside the banking intent set.",
+    "synthetic": true
+  },
+  {
+    "id": "review_013",
+    "text": "The river bank behind our house is eroding after heavy rain. Which plants help hold the soil?",
+    "kind": "off_domain",
+    "expected_review": true,
+    "expected_reason": "outside_banking_support",
+    "rationale": "The word bank is a lexical distractor in a landscaping question.",
+    "synthetic": true
+  },
+  {
+    "id": "review_014",
+    "text": "I lost the queen of hearts from my playing card deck. Can I replace that one card?",
+    "kind": "off_domain",
+    "expected_review": true,
+    "expected_reason": "outside_banking_support",
+    "rationale": "Lost and card are banking-like words, but the object is a playing card.",
+    "synthetic": true
+  },
+  {
+    "id": "review_015",
+    "text": "How do I transfer a tomato seedling into a larger pot without harming its roots?",
+    "kind": "off_domain",
+    "expected_review": true,
+    "expected_reason": "outside_banking_support",
+    "rationale": "Transfer describes gardening rather than moving money.",
+    "synthetic": true
+  },
+  {
+    "id": "review_016",
+    "text": "My graphics card is not working after a computer restart. The screen stays black.",
+    "kind": "off_domain",
+    "expected_review": true,
+    "expected_reason": "outside_banking_support",
+    "rationale": "Card failure refers to computer hardware, not a payment card.",
+    "synthetic": true
+  },
+  {
+    "id": "review_017",
+    "text": "It failed again. Can you fix the same thing as last time?",
+    "kind": "ambiguous_multiple_issues",
+    "expected_review": true,
+    "expected_reason": "insufficient_context",
+    "rationale": "Neither the transaction type nor the requested banking action is identified.",
+    "synthetic": true
+  },
+  {
+    "id": "review_018",
+    "text": "The money is missing. I do not know whether it was a transfer, a card payment, or a cash withdrawal.",
+    "kind": "ambiguous_multiple_issues",
+    "expected_review": true,
+    "expected_reason": "insufficient_context",
+    "rationale": "The message explicitly leaves several materially different transaction types unresolved.",
+    "synthetic": true
+  },
+  {
+    "id": "review_019",
+    "text": "My bank card is missing and my incoming bank transfer has not reached my balance. Please help with both.",
+    "kind": "ambiguous_multiple_issues",
+    "expected_review": true,
+    "expected_reason": "multiple_banking_intents",
+    "rationale": "Lost card and missing incoming-transfer balance update require separate intent handling.",
+    "synthetic": true
+  },
+  {
+    "id": "review_020",
+    "text": "I forgot my app passcode and I also need a refund for a card purchase. These are separate problems.",
+    "kind": "ambiguous_multiple_issues",
+    "expected_review": true,
+    "expected_reason": "multiple_banking_intents",
+    "rationale": "Account-access recovery and refund request are separate support intents.",
+    "synthetic": true
+  },
+  {
+    "id": "review_021",
+    "text": "Please help with the charge. I cannot tell whether the amount is wrong, duplicated, or just a fee.",
+    "kind": "ambiguous_multiple_issues",
+    "expected_review": true,
+    "expected_reason": "insufficient_context",
+    "rationale": "The user has not identified which of several charge-related problems applies.",
+    "synthetic": true
+  },
+  {
+    "id": "review_022",
+    "text": "How do I get a disposable virtual card, and how do I cancel a bank transfer that is still pending?",
+    "kind": "ambiguous_multiple_issues",
+    "expected_review": true,
+    "expected_reason": "multiple_banking_intents",
+    "rationale": "A new virtual-card feature question and a transfer-cancellation action coexist.",
+    "synthetic": true
+  },
+  {
+    "id": "review_023",
+    "text": "My ATM withdrawal is pending, and a different direct debit payment is one I do not recognise. Please investigate both entries.",
+    "kind": "ambiguous_multiple_issues",
+    "expected_review": true,
+    "expected_reason": "multiple_banking_intents",
+    "rationale": "A pending cash withdrawal and an unrecognised direct debit are distinct issues.",
+    "synthetic": true
+  },
+  {
+    "id": "review_024",
+    "text": "The app says it is blocked, but I cannot work out whether it means my card PIN or the transfer beneficiary. What should I do?",
+    "kind": "ambiguous_multiple_issues",
+    "expected_review": true,
+    "expected_reason": "insufficient_context",
+    "rationale": "The blocked object is unresolved between PIN access and transfer-beneficiary restrictions.",
+    "synthetic": true
+  }
+]

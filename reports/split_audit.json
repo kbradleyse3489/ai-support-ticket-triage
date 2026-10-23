@@ -1,0 +1,16 @@
+{
+  "original_development_rows": 10003,
+  "original_test_rows": 3080,
+  "development_rows_removed_for_test_overlap": 25,
+  "development_conflicting_rows_removed": 2,
+  "development_duplicate_rows_removed": 30,
+  "test_normalized_duplicate_rows_retained": 4,
+  "train_rows": 7956,
+  "validation_rows": 1990,
+  "test_rows": 3080,
+  "seed": 42,
+  "normalization": "lowercase, replace non-word runs with a space, strip",
+  "official_test_unchanged": true,
+  "note": "Official test rows, order, and labels are retained; text-only duplicate hygiene removes development rows, not test rows. Similar paraphrases may remain.",
+  "test_rows_with_train_word_tfidf_cosine_ge_0_95": 40
+}

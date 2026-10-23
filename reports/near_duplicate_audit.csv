@@ -1,0 +1,41 @@
+ticket_id,text,intent,nearest_train_text,cosine_similarity
+banking77_8ae5a8fe0475,What do you base your exchange rates on?,exchange_rate,On what do you base your exchange rates?,1.0
+banking77_b705f3fa6c42,I got a extra €1 fee in my statement,extra_charge_on_statement,I got a €1 extra fee in my statement,1.0
+banking77_d84841855b98,Can I exchange currencies with this app?,exchange_via_app,How can I exchange currencies with this app?,0.9595645535854949
+banking77_817163facd26,Can I change to another currency?,exchange_via_app,How can I change to another currency?,0.955236317683672
+banking77_437f65d9c7c8,Help! Someone stole my card!,lost_or_stolen_card,Someone stole my card!,0.9566014022185302
+banking77_bcc7d83d0de3,top up did not complete,pending_top_up,My top up did not complete.,0.9523711102656076
+banking77_9434f0bde375,Is there a limit to top-up amounts?,top_up_limits,is there a limit to top up,1.0
+banking77_772f39c3ca0d,The ATM gave me less cash than I requested,wrong_amount_of_cash_received,The ATM gave me less cash than requested,1.0
+banking77_5c2e56a8b895,Can I use my card anywhere I want?,card_acceptance,Can I use my card anywhere?,0.9544448564084298
+banking77_6f162b8a0bb1,Which outlets accept my card?,card_acceptance,Which merchants accept my card?,1.0
+banking77_24fa19e33f1c,How can I edit my personal details?,edit_personal_details,Can I edit my personal details?,0.9625625085665366
+banking77_ed03b50e3902,I can't verify my identity.,unable_to_verify_identity,Can I verify my identity?,1.0
+banking77_89d23a560c2a,I a having trouble proving my identity,unable_to_verify_identity,I'm having trouble proving my identity,1.0
+banking77_b65c4c1d9762,I would like to apply for a visa card.,visa_or_mastercard,I'd like to apply for a Visa Card.,0.9516296066475253
+banking77_ea3b02769dbc,How many disposable cards can I own?,disposable_card_limits,How many disposable cards can you own?,0.9643195947932526
+banking77_a4703175e1cc,Which ATMs accept this placard ?,atm_support,Which ATMs accept this circuit board ?,1.0
+banking77_311a2310f66b,what is this charge on my account,direct_debit_payment_not_recognised,What is this $1 charge on my account?,1.0
+banking77_60e94d0f1b83,I forgot my password,passcode_forgotten,Help!  I forgot my password.,0.9581087896502067
+banking77_2207cb533929,I need a new passcode.,passcode_forgotten,Need a new passcode.,1.0
+banking77_efd904b6e4bc,I lost my phone and need help securing it.,lost_or_stolen_phone,I lost my phone and need help protecting it.,1.0
+banking77_6f0de141baf5,I tried to buy something online yesterday but it kept saying declined. Tried again today but same thing happened. What's broken?,declined_transfer,I tried to buy something online yesterday but it kept saying declined. Tried again today but same thing happened. What's wrong?,0.9625623815947713
+banking77_cca4b1ab40bc,There's a refund missing from my statement,Refund_not_showing_up,Transaction refund missing from my statement.,0.9530788719916126
+banking77_f5a2aed73bae,For how long will my transfer be pending?,pending_transfer,How long will my transfer be pending?,0.9870202528398773
+banking77_d211318dc1af,How long does it take for a money transfer to show?,pending_transfer,How long does it take for a money transfer to show up?,0.9501014366225498
+banking77_732584a9f880,How can I get my card out of the damn ATM?,card_swallowed,How can I get my card out of the ATM?,0.964946226978633
+banking77_cb3c6a89d629,The ATM ate my card.,card_swallowed,atm ate my card,0.9501711555684764
+banking77_9df70ea3110b,My card payment was reverted.  Why?,reverted_card_payment?,My card payment was reverted,0.977290120130903
+banking77_3c3637eeb5b9,What happens if a merchant doesn't accept a payment?,reverted_card_payment?,What happens if a merchant doesn't accept  you payment?,0.9849582844770903
+banking77_7d7071694b14,How can I change my Tholepin ?,change_pin,How can I change my Rowlock ?,1.0
+banking77_ab26aa8049ce,"I thought transfers were free, why was I charged a fee?",transfer_fee_charged,"I thought transfers were free, why was I charged?",0.9553753560129795
+banking77_3ca8a0d4d2e0,How can my friend send me money?,receiving_money,Can my friend send me money?,0.9606716652276028
+banking77_0d99cd8874a6,My transfer didn't work,failed_transfer,My transfer didn't work! Help!,0.9545034800821115
+banking77_333bd2fcb1f5,What is the importance of verifying the top-up?,verify_top_up,What is the significance of verifying the top-up?,1.0
+banking77_7a92c9a74b7d,What is the necessity of verifying the top up?,verify_top_up,What is the significance of verifying the top-up?,1.0
+banking77_a0010240bb3d,Can I top up my account with a cheque?,top_up_by_cash_or_cheque,How can I top up my account with a cheque?,0.9504755187997087
+banking77_02e69a7a386f,"Please, how do I order a card?",order_physical_card,How do I order a card?,0.9592113401117168
+banking77_635ca00d4b63,Where can cards be delivered?,order_physical_card,Can cards be delivered? Where?,0.9524005306463462
+banking77_230a1ba43472,I was charged for a cash withdrawal.,cash_withdrawal_charge,"I was charged for a cash withdrawal, why?",0.9780165008916583
+banking77_3be489f1c63e,can i top up with apple pay,apple_pay_or_google_pay,How can I top up with Apple Pay?,0.951841282105769
+banking77_86487795635f,How can I top up with Google Pay?,apple_pay_or_google_pay,Can I top up with Google Pay?,0.9518089417316561

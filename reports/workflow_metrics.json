@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "issue_focused": {
+      "fixtures": 36,
+      "matched_key_phrases": 82,
+      "total_key_phrases": 99,
+      "micro_key_phrase_recall": 0.8282828282828283,
+      "complete_key_phrase_retention": 0.5277777777777778,
+      "fully_extractive_summary_rate": 1.0,
+      "mean_summary_to_input_word_ratio": 0.5757774526905552
+    },
+    "lead_two": {
+      "fixtures": 36,
+      "matched_key_phrases": 51,
+      "total_key_phrases": 99,
+      "micro_key_phrase_recall": 0.5151515151515151,
+      "complete_key_phrase_retention": 0.19444444444444445,
+      "fully_extractive_summary_rate": 1.0,
+      "mean_summary_to_input_word_ratio": 0.5173445351978833
+    }
+  },
+  "review_challenges": {
+    "ambiguous_multiple_issues": {
+      "examples": 8,
+      "flagged_for_review": 5,
+      "matches_authored_expectation": 5
+    },
+    "in_domain_straightforward": {
+      "examples": 8,
+      "flagged_for_review": 1,
+      "matches_authored_expectation": 7
+    },
+    "off_domain": {
+      "examples": 8,
+      "flagged_for_review": 7,
+      "matches_authored_expectation": 7
+    }
+  },
+  "notes": [
+    "All fixtures are project-authored synthetic diagnostics, not real customer tickets.",
+    "Expected phrases and review flags were frozen independently before inference, not supplied by human raters.",
+    "Lexical retention is not semantic correctness, actionability, or professional summary quality.",
+    "Copying a sentence prevents newly generated words, but can still omit critical context or preserve a false user statement.",
+    "Challenge results are observations only; no model, threshold, extractor, or review rules were retuned after viewing fixture scores."
+  ]
+}
